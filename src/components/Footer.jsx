@@ -4,11 +4,19 @@ import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
 import { HiOutlinePhone } from "react-icons/hi2";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init({
+  offset: 120,
+  delay: 0, 
+  duration: 800, 
+  easing: 'ease',
+});
 
 const Footer = () => {
   return (
     <div className='lg:px-32 py-[7rem] grid xl:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 place-items-center align-top gap-8 max-sm:grid-cols-2 sm:px-8 max-sm:px-10 max-sm:gap-10 max-sm:w-full'>
-      <div className='flex flex-col gap-3'>
+      <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" className='flex flex-col gap-3'>
         <p className='text-[#010101] text-xl font-bold'>About the company</p>
         <p className='text-[#676767]'>Learn To Love Growth And Change And You Will Be A Success. Microsoft Patch </p>
         <div className='flex flex-row gap-5 pt-[5rem] max-sm:pt-[1rem] sm:pt-[2rem]'>
@@ -19,7 +27,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex flex-col gap-3'>
+      <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" className='flex flex-col gap-3'>
         <p className='text-[#010101] text-xl font-bold'>Products</p>
         <div className='flex flex-col gap-2'>
           <p className='text-[#676767] cursor-pointer'>CSR Activities</p>
@@ -30,7 +38,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex flex-col gap-3'>
+      <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="300" className='flex flex-col gap-3'>
         <p className='text-[#010101] text-xl font-bold'>Get Started</p>
         <div className='flex flex-col gap-2'>
           <p className='text-[#676767] cursor-pointer'>Career</p>
@@ -41,7 +49,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex flex-col gap-3'>
+      <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="300" className='flex flex-col gap-3'>
         <p className='text-[#010101] text-xl font-bold'>About</p>
         <div className='flex flex-col gap-2'>
           <p className='text-[#676767] cursor-pointer'>IPDC at a Glance</p>
@@ -52,7 +60,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className='flex flex-row gap-5 items-center mb-auto'>
+      <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="400" className='flex flex-row gap-5 items-center mb-auto'>
         <HiOutlinePhone size={26} color='#ED017F' />
         <p className=' text-xl'>16519</p>
       </div>

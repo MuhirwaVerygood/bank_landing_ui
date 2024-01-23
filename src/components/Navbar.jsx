@@ -3,7 +3,15 @@ import Logo from '../assets/logos/logo.png';
 import { IoSearch } from 'react-icons/io5';
 import { TbMenuDeep } from "react-icons/tb";
 import { IoMdClose } from "react-icons/io";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
+AOS.init({
+  offset: 120,
+  delay: 0, 
+  duration: 800, 
+  easing: 'ease',
+});
 
 const Navbar = () => {
     const [nav,setNav] = useState(false);
@@ -12,7 +20,7 @@ const Navbar = () => {
     }
     
   return (
-    <header className="py-4 top-0 2xl:px-32 xl:px-14 lg:px-7 absoulte z-40 w-full max-lg:px-7">
+    <header data-aos="fade-down" className="py-4 top-0 2xl:px-32 xl:px-14 lg:px-7 absoulte z-40 w-full max-lg:px-7">
       <nav className="flex justify-between items-center">
         <a href="/">
           <img src={Logo} alt="Logo" width={130} height={29} />

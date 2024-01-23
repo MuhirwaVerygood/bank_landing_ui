@@ -1,18 +1,26 @@
 import React from 'react';
 import image from '../assets/images/Picture.png';
 import { IoArrowForward } from 'react-icons/io5';
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init({
+  offset: 120,
+  delay: 0, 
+  duration: 800, 
+  easing: 'ease',
+});
 
 const More = () => {
   return (
     <div className="flex flex-col md:flex-row md:items-center max-md:mb-[6rem]">
 
       {/* Left Section (Image) */}
-      <div className="flex-1">
+      <div data-aos="fade-right" data-aos-offset="200" data-aos-delay="50" className="flex-1">
         <img src={image} alt="" className="max-xl:w-full xl:w-[80%] md:h-full max-lg:h-full md:object-cover" />
       </div>
 
       {/* Right Section (Text Content) */}
-      <div className='max-md:px-[3rem] max-md:text-center max-md:pt-[10%] flex flex-1'>
+      <div data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" className='max-md:px-[3rem] max-md:text-center max-md:pt-[10%] flex flex-1'>
         <div className="flex-1 md:p-[5rem] ">
             <h2 className="text-3xl font-bold mb-4 md:text-4xl max-sm:text-xl text-[#343434]">IPDC AT A GLANCE</h2>
             <p className="text-[#676767] text-lg max-lg:text-lg max-sm:text-[16px]">

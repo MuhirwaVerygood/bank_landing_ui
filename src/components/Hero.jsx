@@ -7,6 +7,14 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io";
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init({
+  offset: 120,
+  delay: 0, 
+  duration: 800, 
+  easing: 'ease',
+});
 
 
 const Hero = () => {
@@ -14,23 +22,23 @@ const Hero = () => {
     <div className="mb-[10rem] pl-32 max-lg:px-[2rem] flex flex-row items-center max-lg:flex-col max-lg:mt-[4rem] max-lg:text-center">
       {/* left side */}
       <div className="flex flex-1 h-[85vh] flex-col justify-center gap-10">
-        <h1 className='md:text-[5rem] 2xl:mt-8 tracking-tight font-bold xl:text-[5rem] max-md:text-[3rem] lg:text-[4rem] max-sm:text-[2.3rem]'>
+        <h1 data-aos="fade-up" data-aos-offset="200" data-aos-delay="50" className='md:text-[5rem] 2xl:mt-8 tracking-tight font-bold xl:text-[5rem] max-md:text-[3rem] lg:text-[4rem] max-sm:text-[2.3rem]'>
           Chase Your <br /> Dream with us
         </h1>
-        <p className=' text-gray-500 xl:text-2xl md:text-xl sm:text-lg lg:text-lg'>
+        <p data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" className=' text-gray-500 xl:text-2xl md:text-xl sm:text-lg lg:text-lg'>
           The harder you work for something, the greater <br /> you’ll feel when you
           achieve it.
         </p>
         <div className=' flex flex-row gap-6 max-lg:justify-center'>
-          <button className="border-transparent text-[17px] rounded-md lg:py-[10px] lg:text-[15px] lg:px-3 bg-[#ED017F] xl:px-10 xl:py-[15px] text-white tracking-widest max-lg:py-[10px] max-lg:px-4 max-lg:text-[14px] max-md:text-[12px] max-sm:text-[10px] max-sm:py-1 max-sm:px-4">
+          <button data-aos="fade-right" data-aos-offset="200" data-aos-delay="200" className="border-transparent text-[17px] rounded-md lg:py-[10px] lg:text-[15px] lg:px-3 bg-[#ED017F] xl:px-10 xl:py-[15px] text-white tracking-widest max-lg:py-[10px] max-lg:px-4 max-lg:text-[14px] max-md:text-[12px] max-sm:text-[10px] max-sm:py-1 max-sm:px-4">
             APPLY ONLINE
           </button>
-          <button className="border-[#ED017F] border-[1px] text-[17px] lg:py-[10px] lg:text-[15px] rounded-md bg-transparent px-10 py-[15px] text-[#ED017F] tracking-widest max-lg:py-[10px] max-lg:px-4 max-lg:text-[14px] max-md:text-[12px] max-sm:text-[12px] max-sm:py-[14px] max-sm:px-4">
+          <button data-aos="fade-left" data-aos-offset="200" data-aos-delay="200" className="border-[#ED017F] border-[1px] text-[17px] lg:py-[10px] lg:text-[15px] rounded-md bg-transparent px-10 py-[15px] text-[#ED017F] tracking-widest max-lg:py-[10px] max-lg:px-4 max-lg:text-[14px] max-md:text-[12px] max-sm:text-[12px] max-sm:py-[14px] max-sm:px-4">
             LOAN CALCULATOR
           </button>
         </div>
 
-        <div className='flex flex-row items-center gap-6 pt-10 max-lg:justify-center'>
+        <div data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" className='flex flex-row items-center gap-6 pt-10 max-lg:justify-center'>
             <div className='flex flex-row gap-5 items-center'>
                <HiOutlinePhone size={26} color='#ED017F' />
                <p className=' text-xl'>16519</p>
@@ -46,16 +54,16 @@ const Hero = () => {
       </div>
 
       {/* right side */}
-      <div className="relative flex-1 h-[85vh] bg-[#FFEAF5] max-lg:mt-[10rem] max-md:mt-[5rem]">
+      <div className="relative flex-1 h-[104vh] mt-[-10rem] z-[-1] bg-[#FFEAF5] max-lg:mt-[10rem] max-md:mt-[5rem]">
         <section className=''>
-          <img src={Family} alt="/" className='w-[100%] mx-auto lg:mt-[15rem]'/>
+          <img data-aos="fade-up" data-aos-offset="200" data-aos-delay="200" src={Family} alt="/" className='w-[100%] mx-auto lg:mt-[15rem]'/>
  
           <div>
-            <img src={Frame2} alt="/" className='absolute top-24 sm:left-[-1rem] 2xl:left-[-8rem] sm:w-[40%] max-sm:w-[40%] max-sm:left-[-1rem]'/>
+            <img data-aos="fade-right" data-aos-offset="200" data-aos-delay="200" src={Frame2} alt="/" className='absolute top-28 sm:left-[-1rem] 2xl:left-[-8rem] sm:w-[40%] max-sm:w-[40%] max-sm:left-[-1rem]'/>
           </div> 
 
           <div>
-            <img src={Frame1} alt="/" className='absolute top-[20rem] right-0 sm:w-[40%] sm:right-[-1rem]  max-sm:w-[40%] max-sm:right-[-1rem] max-sm:top-10' />
+            <img data-aos="fade-left" data-aos-offset="200" data-aos-delay="200" src={Frame1} alt="/" className='absolute top-[20rem] right-0 sm:w-[40%] sm:right-[-1rem]  max-sm:w-[40%] max-sm:right-[-1rem] max-sm:top-10' />
           </div>
 
           
